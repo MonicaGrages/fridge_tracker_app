@@ -1,2 +1,6 @@
 <h1>FridgeApp#index</h1>
 <p>Find me in app/views/fridge_app/index.html.erb</p>
+
+<% @fridges.each_with_index do |fridge, index| %>
+  <%= fridge.location %>
+<% end %>
