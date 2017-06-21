@@ -1,0 +1,2 @@
+module FridgeAppHelper
+end
