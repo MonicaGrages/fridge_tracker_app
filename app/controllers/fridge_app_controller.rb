@@ -1,9 +1,12 @@
 class FridgeAppController < ApplicationController
+  attr_reader :id
+
   def index
     @fridges = Fridge.all
   end
 
   def show
+    @fridge = Fridge.find(params[:id])
   end
 
   def new
