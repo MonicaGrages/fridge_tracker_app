@@ -6,7 +6,8 @@ class FridgeAppController < ApplicationController
   end
 
   def show
-    @fridge = Fridge.find(params[:id])
+    id = params[:id]
+    @fridge = Fridge.find(id)
   end
 
   def new

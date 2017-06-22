@@ -3,10 +3,7 @@
 
 <ul class='index_of_fridges'>
 <% @fridges.each_with_index do |fridge, index| %>
-<!-- <li><a href="/fridge_app/show.<%= fridge.id %>">
-        See the fridge at <%= fridge.location %>
-      </a></li> -->
-<li> <%= link_to "See the fridge at #{fridge.location}", fridge_app_show_path(fridge.id) %></li>
+  <li> <%= link_to "See the fridge at #{fridge.location}", "/fridge_app/#{fridge.id}" %></li>
 <% end %>
 </ul>
 
